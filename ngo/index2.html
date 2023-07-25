@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+* { 
+  margin : 0;
+  padding: 0;
+  box-sizing : border-box;
+  font-family : "Poppins", sans-serif;
+}
+body {
+  display : flex;
+  align-items : center;
+  justify-content : center;  
+  background-color: #cdc3de;
+  min-height : 800px;
+}
+
+.container {
+  position : relative;
+  display : flex;
+  align-items : center;
+  justify-content : center;
+  flex-wrap : wrap;
+  padding : 30px;  
+}
+
+.container .card {
+  position: relative;
+  max-width : 300px;
+  height : 215px;  
+  background-color : #fff;
+  margin : 30px 10px;
+  padding : 20px 15px;
+  
+  display : flex;
+  flex-direction : column;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+  transition : 0.5s ease-in-out;
+  border-radius : 15px;
+}
+.container .card:hover {
+  height : 300px; 
+}
+
+
+.container .card .image {
+  position : relative;
+  width : 260px;
+  height : 260px;
+  
+  top : -40%;
+  left: 6px;
+  z-index : 1;
+}
+
+.container .card .image img {
+  max-width : 100%;
+  border-radius : 15px;
+}
+
+.container .card .content {
+  position : relative;
+  top : -140px;
+  padding : 10px 15px;
+  color : #111;
+  text-align : center;
+  
+  visibility : hidden;
+  opacity : 0;
+    
+}
+.container .card:hover img{
+    height: 170px;
+    margin-left: 16%;
+    box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+}
+.container .card:hover .content {
+   margin-top : 30px;
+   visibility : visible;
+   opacity : 1;
+   transition-delay: 0.2s;
+  
+}
+    </style>
+</head>
+<body>
+        <div class = container>
+          <div class = card>
+            <div class = image>
+              <img src = "pic.jpg">
+              <h3></h3>
+            </div>
+            <div class = content>
+              <h2 style="padding: 5px 0px;">Seva Aur Sahyog</h2>
+              <hr style="width: 60%;">
+              <p style="padding-top: 5px;">A group of youngsters trying to make a difference 😊 Seva Sahayog Foundation has been working relentlessly since 2009 towards the development and welfare of the underprivileged sections of society.</p>
+            </div>
+          </div>    
+        </div>
+</body>
+</html>
